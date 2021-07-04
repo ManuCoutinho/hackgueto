@@ -67,7 +67,7 @@ footer a,
     margin-bottom: -2%;
   }
 
-  .carousel-navigation {
+.carousel-navigation {
     align-items: center;
     justify-content: center;
     width: auto;
@@ -76,7 +76,7 @@ footer a,
     margin-top: -2%;
   }
 
-  .bg-verde {
+.bg-verde {
     background-color: var(--verde-escuro);    
     
 }
@@ -124,28 +124,61 @@ textarea:focus, input:focus, select:focus {
     outline: 0;
   } 
   
-  .divisoria {
-    border-bottom: 1px solid var(--preto);
+.divisoria {
+    border-bottom: 1px solid var(--branco);
   }
 
-  .icones-rodape {
+.icones-rodape {
     font-size:2.5rem;
-    color: var(--verde-escuro);
+    color: var(--branco);
     margin: 2rem 0;
   }
 
-  .shadow-box {
+.shadow-box {
     -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
     box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
   }
 
-  .shadow-box a {
+.shadow-box a {
       text-decoration: none;
       color: var(--azul);
   }
 
-  .shadow-box a:hover {
+.shadow-box a:hover {
     text-decoration: none;
     font-weight: bold;
     color: var(--vinho);
+}
+
+.img-card {
+    width:auto;
+    height:auto;
+    border-radius: 100%;
+    border: 2px solid #fafafa;
+}
+
+.titulos {
+    color: var(--verde-escuro);
+}
+
+.projetos a {
+    color: var(--verde-escuro);
+}
+
+.projetos a:hover {
+    color: var(--vinho);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.setas-verde {
+    font-size:2.125rem;
+    color: var(--verde-escuro);
+    text-decoration: none;
+}
+
+.setas-branca {
+    font-size:2.125rem;
+    color: var(--branco);
+    text-decoration: none;
 }
