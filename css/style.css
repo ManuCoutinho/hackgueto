@@ -5,8 +5,10 @@
     --branco: #fff;
     --cinza-claro: #f1f1f1;
     --laranja: #F2B56B;
-    --marron: #733729;
+    --marrom: #733729;
     --preto: #000;
+    --azul: #043166;
+    --vinho: #590A42;
 }
 
 html, body {
@@ -32,6 +34,7 @@ html, body {
    text-decoration: none;
    color: var(--cor);
 }
+
 .navegacao a:hover,
 #contato a:hover,
 #sobre a:hover,
@@ -55,21 +58,35 @@ footer a,
     margin-right: 1rem;   
   }
 
-  .bg-principal {
-    background-color: var(--verde-escuro);     
-    height:100vh;
+.carousel-indicators {
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-top: 100%;
+    margin-bottom: -2%;
+  }
+
+  .carousel-navigation {
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-top: 100%;
+    margin-top: -2%;
+  }
+
+  .bg-verde {
+    background-color: var(--verde-escuro);    
+    
 }
 
-.bg-sobre {
+.bg-cinza {
     background-color: var(--cinza-claro);
 }
 
 .bg-tutorial {
     background-color: var(--laranja);
-}
-
-.bg-contato {
-    background-color: var(--marron)
 }
 
 .espaco-editais {
@@ -116,3 +133,19 @@ textarea:focus, input:focus, select:focus {
     color: var(--verde-escuro);
     margin: 2rem 0;
   }
+
+  .shadow-box {
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  }
+
+  .shadow-box a {
+      text-decoration: none;
+      color: var(--azul);
+  }
+
+  .shadow-box a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--vinho);
+}
