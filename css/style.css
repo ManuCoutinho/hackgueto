@@ -6,11 +6,17 @@
     --cinza-claro: #f1f1f1;
     --laranja: #F2B56B;
     --marron: #733729;
+    --preto: #000;
 }
+
+html, body {
+    scroll-behavior: smooth;
+  }
 
 .body {
     font-family: 'Darker Grotesque', sans-serif;
     font-size:16px;
+    position:relative;
 }
 
 .card-position {
@@ -33,6 +39,7 @@
 #portfolio a:hover,
 #home a:hover,
 #resumo a:hover,
+footer a,
 .card-position a:hover {
   color: var(--laranja);
   text-decoration: none;
@@ -55,6 +62,14 @@
 
 .bg-sobre {
     background-color: var(--cinza-claro);
+}
+
+.bg-tutorial {
+    background-color: var(--laranja);
+}
+
+.bg-contato {
+    background-color: var(--marron)
 }
 
 .espaco-editais {
@@ -82,6 +97,22 @@
 }
 
 .espaco-sobre {
-    margin-top: 5rem;
+    padding-top: 3rem;
     padding-bottom: 2.5rem;
 }
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+  } 
+  
+  .divisoria {
+    border-bottom: 1px solid var(--preto);
+  }
+
+  .icones-rodape {
+    font-size:2.5rem;
+    color: var(--verde-escuro);
+    margin: 2rem 0;
+  }
