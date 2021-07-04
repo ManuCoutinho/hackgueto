@@ -27,7 +27,7 @@
       <title>Linka Favela</title>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="70">
-      <header class="mb-5">
+    <header class="mb-5">
           <!-----------Menu principal------->
           <nav id="navbar" class="navbar navbar-expand-lg navbar-line-under-text fixed-top bg-light navegacao" role="navigation">
               <div class="container-fluid">
@@ -70,10 +70,10 @@
           </nav>
           <!------------Fim menu principal----------->
           </div>
-      </header>
+    </header>
       <main>
         <div class="container-fluid bg-principal espaco-editais">
-            <section id="home">
+          <section id="home">
             <!--Search-->         
               <div class="search margin-search espaco-editais">
                 <form>
@@ -98,149 +98,268 @@
                   </div>
                   </form>                                   
               </div>
-              <!--/Search-->
-
-              <!--carousel-->              
-              <div id="multi-item" class="carousel slide carousel-multi-item" data-ride="carousel">
-                <!--Controls-->
-                <div class="carousel-indicators controls-top">
-                  <a class="btn-floating waves-effect waves-light" href="#multi-item" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
-                  <a class="btn-floating waves-effect waves-light" href="#multi-item" data-slide="next"><i class="fas fa-chevron-right"></i></a>
-                </div>
-                <!--/Controls--> 
-
-                <!--Indicators-->
-                <ol class="carousel-indicators">
-                  <li data-target="#multi-item" data-slide-to="0" class="active"></li>
-                  <li data-target="#multi-item" data-slide-to="1"></li>                  
-                </ol>
-                <!--/Indicators-->
-    
-                <!--cards edital-->
+            <!--/Search-->
+            <!--main carousel-->     
+            <div id="multi-item" class="carousel slide carousel-multi-item" data-ride="carousel">
+              <!--Controls-->
+              <div class="carousel-indicators controls-top">
+                <a class="btn-floating waves-effect waves-light" href="#multi-item" data-slide="prev" aria-label="slide"><i class="fas fa-chevron-left"></i></a>
+                <a class="btn-floating waves-effect waves-light" href="#multi-item" data-slide="next" aria-label="slide"><i class="fas fa-chevron-right"></i></a>
+              </div>
+              <!--/Controls--> 
+              <!--Indicators-->
+              <ol class="carousel-indicators">
+                <li data-target="#multi-item" data-slide-to="0" class="active"></li>
+                <li data-target="#multi-item" data-slide-to="1"></li>                  
+              </ol>
+              <!--/Indicators-->
+              <!--cards edital-->
               <div class="carousel-inner" role="listbox">
-              
-                  <!--primeiro card-->
-                <div class="carousel-item active">  
+                <!--primeiro card-->
+                <div class="carousel-item active">
+                  <div class="col-md-3 card-position">
+                    <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="./img/card1.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title">Edital Vale</h4>
+                            <p class="card-text">
+                              <i class="far fa-clock"></i>
+                              PRAZO 01/01/2022
+                            </p>
+                            <i class="fas fa-search-dollar"></i>      
+                              VALOR R$10.000,00
+                            </p>
+                            <p class="card-text">
+                              <ul>
+                                <li>
+                                  Somente pessoa jurídica
+                                </li>
+                                <li>
+                                  Projetos com mais de um ano de existência...
+                                </li>
+                              </ul>
+                            </p>
+                            <p>+ 3 requisitos</p>
+                            <a href="#">Saiba mais</a>
+                          </div>
+                      </div>
+                    </div>
+                
+                      <div class="col-md-3 card-position">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="./img/card2.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title">Edital BNDES</h4>
+                            <p class="card-text">
+                              <i class="far fa-clock"></i>
+                              PRAZO 12/12/2021
+                            </p>
+                            <i class="fas fa-search-dollar"></i>      
+                              VALOR R$50.000,00
+                            </p>
+                            <p class="card-text">
+                              <ul>
+                                <li>
+                                  Somente pessoa jurídica
+                                </li>
+                                <li>
+                                  Projetos de fomento alimentar em área urbana...
+                                </li>
+                              </ul>
+                            </p>
+                            <p>+ 2 requisitos</p>
+                            <a href="#">Saiba mais</a>
+                          </div>
+                        </div>
+                      </div>
+                
+                      <div class="col-md-3 card-position">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="./img/card3.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title">Edital Prefeitura RJ</h4>
+                            <p class="card-text">
+                              <i class="far fa-clock"></i>
+                              PRAZO 11/11/2021
+                            </p>
+                            <i class="fas fa-search-dollar"></i>      
+                              VALOR R$30.000,00
+                            </p>
+                            <p class="card-text">
+                              <ul>
+                                <li>
+                                  Somente pessoa jurídica
+                                </li>
+                                <li>
+                                  Projetos de agricultura sustentável...
+                                </li>
+                              </ul>
+                            </p>
+                            <p>+ 4 requisitos</p>
+                            <a href="#">Saiba mais</a>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-3 card-position">
+                      <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="./img/card4.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title">Edital Prefeitura RJ</h4>
+                            <p class="card-text">
+                              <i class="far fa-clock"></i>
+                              PRAZO 11/11/2021
+                            </p>
+                            <i class="fas fa-search-dollar"></i>      
+                              VALOR R$30.000,00
+                            </p>
+                            <p class="card-text">
+                              <ul>
+                                <li>
+                                  Somente pessoa jurídica
+                                </li>
+                                <li>
+                                  Projetos de agricultura sustentável...
+                                </li>
+                              </ul>
+                            </p>
+                            <p>+ 4 requisitos</p>
+                            <a href="#">Saiba mais</a>
+                          </div>
+                        </div>
+                      </div>              
+                </div> 
+                 <!--/primeiro card-->
+
+                <!--segundo card-->
+                <div class="carousel-item">              
+                        
+                  <div class="col-md-3 card-position">
+                    <div class="card mb-2">
+                      <img class="card-img-top"
+                        src="./img/card5.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">Edital BNDES</h4>
+                            <p class="card-text">
+                              <i class="far fa-clock"></i>
+                              PRAZO 12/12/2021
+                            </p>
+                            <i class="fas fa-search-dollar"></i>      
+                              VALOR R$50.000,00
+                            </p>
+                            <p class="card-text">
+                              <ul>
+                                <li>
+                                  Somente pessoa jurídica
+                                </li>
+                                <li>
+                                  Projetos de fomento alimentar em área urbana...
+                                </li>
+                              </ul>
+                            </p>
+                            <p>+ 2 requisitos</p>
+                            <a href="#">Saiba mais</a>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <div class="col-md-3 card-position">
+                    <div class="card mb-2">
+                      <img class="card-img-top"
+                        src="./img/card6.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">Edital Vale</h4>
+                            <p class="card-text">
+                              <i class="far fa-clock"></i>
+                              PRAZO 01/01/2022
+                            </p>
+                            <i class="fas fa-search-dollar"></i>      
+                              VALOR R$10.000,00
+                            </p>
+                            <p class="card-text">
+                              <ul>
+                                <li>
+                                  Somente pessoa jurídica
+                                </li>
+                                <li>
+                                  Projetos com mais de um ano de existência...
+                                </li>
+                              </ul>
+                            </p>
+                            <p>+ 3 requisitos</p>
+                            <a href="#">Saiba mais</a>
+                      </div>                      
+                    </div>
+                  </div>
 
                   <div class="col-md-3 card-position">
-                  <div class="card mb-2">
-                        <img class="card-img-top"
-                          src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h4 class="card-title">Card title</h4>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                          <a class="btn btn-primary">Button</a>
-                        </div>
-                    </div>
-                  </div>
-              
-                    <div class="col-md-3 card-position" >
-                      <div class="card mb-2">
-                        <img class="card-img-top"
-                          src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h4 class="card-title">Card title</h4>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                          <a class="btn btn-primary">Button</a>
-                        </div>
-                      </div>
-                    </div>
-              
-                    <div class="col-md-3 card-position">
-                      <div class="card mb-2">
-                        <img class="card-img-top"
-                          src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h4 class="card-title">Card title</h4>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                          <a class="btn btn-primary">Button</a>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div class="col-md-3 card-position">
                     <div class="card mb-2">
-                        <img class="card-img-top"
-                          src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h4 class="card-title">Card title</h4>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                          <a class="btn btn-primary">Button</a>
-                        </div>
-                      </div>
-                    </div>   
-                    
-                  
-                </div>
-                  
-                  <!--/primeiro card-->
-              
-                  <!--segundo card-->
-                  <div class="carousel-item">
-              
-                    <div class="col-md-3" style="float:left">
-                      <div class="card mb-2">
-                        <img class="card-img-top"
-                          src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h4 class="card-title">Card title</h4>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                          <a class="btn btn-primary">Button</a>
-                        </div>
+                      <img class="card-img-top"
+                        src="./img/card7.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">Edital Prefeitura Caxias</h4>
+                        <p class="card-text">
+                          <i class="far fa-clock"></i>
+                          PRAZO 11/11/2021
+                        </p>
+                        <i class="fas fa-search-dollar"></i>      
+                          VALOR R$40.000,00
+                        </p>
+                        <p class="card-text">
+                          <ul>
+                            <li>
+                              Somente pessoa jurídica
+                            </li>
+                            <li>
+                              Projetos de agricultura sustentável em área...
+                            </li>
+                          </ul>
+                        </p>
+                        <p>+ 3 requisitos</p>
+                        <a href="#">Saiba mais</a>
                       </div>
                     </div>
-              
-                    <div class="col-md-3" style="float:left">
-                      <div class="card mb-2">
-                        <img class="card-img-top"
-                          src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h4 class="card-title">Card title</h4>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                          <a class="btn btn-primary">Button</a>
-                        </div>
-                      </div>
-                    </div>
-              
-                    <div class="col-md-3" style="float:left">
-                      <div class="card mb-2">
-                        <img class="card-img-top"
-                          src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h4 class="card-title">Card title</h4>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                          <a class="btn btn-primary">Button</a>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div class="col-md-3" style="float:left">
-                      <div class="card mb-2">
-                        <img class="card-img-top"
-                          src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h4 class="card-title">Card title</h4>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                          <a class="btn btn-primary">Button</a>
-                        </div>
-                      </div>
-                    </div>
-              
                   </div>
-                  <!--/segundo card-->         
-                <!--/.cards edital-->
-              </div>             
-          </section>
-                    
-          </div>
+                  
+                  <div class="col-md-3 card-position">
+                    <div class="card mb-2">
+                      <img class="card-img-top"src="./img/card8.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">Edital Vale</h4>
+                        <p class="card-text">
+                          <i class="far fa-clock"></i>
+                          PRAZO 01/01/2022
+                        </p>
+                        <i class="fas fa-search-dollar"></i>      
+                          VALOR R$10.000,00
+                        </p>
+                        <p class="card-text">
+                          <ul>
+                            <li>
+                              Somente pessoa jurídica
+                            </li>
+                            <li>
+                              Projetos com mais de um ano de existência...
+                            </li>
+                          </ul>
+                        </p>
+                        <p>+ 3 requisitos</p>
+                        <a href="#">Saiba mais</a>
+                      </div>
+                    </div>
+                  </div>
+            
+                </div>
+                <!--/segundo card-->    
+              </div>
+            </div>
+ 
+          </section>           
+        </div>
       </main>
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

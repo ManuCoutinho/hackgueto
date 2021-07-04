@@ -4,6 +4,8 @@
     --verde-escuro: #01595A;
     --branco: #fff;
     --cinza-claro: #f1f1f1;
+    --laranja: #F2B56B;
+    --marron: #733729;
 }
 
 .body {
@@ -13,20 +15,32 @@
 
 .card-position {
     float: left;
+    
 }
 
+.card-position {
+    float: left;    
+}
+
+.card-position a {
+   text-decoration: none;
+   color: var(--cor);
+}
 .navegacao a:hover,
 #contato a:hover,
 #sobre a:hover,
 #servicos a:hover,
 #portfolio a:hover,
 #home a:hover,
-#resumo a:hover {
-  color: var(--color-pink);  
+#resumo a:hover,
+.card-position a:hover {
+  color: var(--laranja);
+  text-decoration: none;
+  font-weight:500;  
 }
 
 .navegacao a {
-    color: var(--color-bordo);
+    color: var(--cor);
     text-transform: uppercase;
     font-weight: 500;
     text-decoration: none;
@@ -37,6 +51,11 @@
   .bg-principal {
     background-color: var(--verde-escuro);     
     height:85vh;
+}
+
+.bg-principal img {
+    width:auto;
+    height:auto;
 }
 
 .espaco-editais {
@@ -62,3 +81,4 @@
     text-align: center;
     margin-bottom: 1.88rem;
 }
+
