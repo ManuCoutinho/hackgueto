@@ -53,6 +53,10 @@
     height:100vh;
 }
 
+.bg-sobre {
+    background-color: var(--cinza-claro);
+}
+
 .espaco-editais {
     padding-top: 4rem;
     padding-bottom: 2.5rem;
@@ -78,6 +82,6 @@
 }
 
 .espaco-sobre {
-    padding-top: 4rem;
+    margin-top: 5rem;
     padding-bottom: 2.5rem;
 }
