@@ -50,12 +50,7 @@
 
   .bg-principal {
     background-color: var(--verde-escuro);     
-    height:85vh;
-}
-
-.bg-principal img {
-    width:auto;
-    height:auto;
+    height:100vh;
 }
 
 .espaco-editais {
@@ -82,3 +77,7 @@
     margin-bottom: 1.88rem;
 }
 
+.espaco-sobre {
+    padding-top: 4rem;
+    padding-bottom: 2.5rem;
+}
