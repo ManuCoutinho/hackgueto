@@ -1,5 +1,64 @@
 /*Linka Favela - Hakgueto 2021 */
 
+:root {
+    --verde-escuro: #01595A;
+    --branco: #fff;
+    --cinza-claro: #f1f1f1;
+}
+
 .body {
     font-family: 'Darker Grotesque', sans-serif;
+    font-size:16px;
+}
+
+.card-position {
+    float: left;
+}
+
+.navegacao a:hover,
+#contato a:hover,
+#sobre a:hover,
+#servicos a:hover,
+#portfolio a:hover,
+#home a:hover,
+#resumo a:hover {
+  color: var(--color-pink);  
+}
+
+.navegacao a {
+    color: var(--color-bordo);
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 1rem 0;
+    margin-right: 1rem;   
+  }
+
+  .bg-principal {
+    background-color: var(--verde-escuro);     
+    height:85vh;
+}
+
+.espaco-editais {
+    padding-top: 4rem;
+    padding-bottom: 2.5rem;
+}
+
+.margin-search {
+     margin-left: 2.5rem;
+     margin-right: 2.5rem;
+}
+
+.btn-floating i {
+    font-size: 1.25rem;
+    line-height: 47px;
+    display: inline-block;
+    width:inherit;
+    text-align:center;
+    color: var(--branco);    
+}
+
+.controls-top {
+    text-align: center;
+    margin-bottom: 1.88rem;
 }

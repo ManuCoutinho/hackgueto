@@ -1,18 +1,249 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Linka Favela</title>
-</head>
-<body>
+  <!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--[if lt IE 9]>
+    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+      <![endif]-->
+      <link rel="stylesheet" href="./css/reset.css">
+      <!--fonts-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;600;800&display=swap" rel="stylesheet">
+      <!--icones-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+      <script src="https://kit.fontawesome.com/9ffb8b279f.js" crossorigin="anonymous"></script>
+      <!--css--> 
+      <link rel="stylesheet" href="./css/style.css">   
+      <!--bootstrap-->    
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+      <title>Linka Favela</title>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="70">
+      <header class="mb-5">
+          <!-----------Menu principal------->
+          <nav id="navbar" class="navbar navbar-expand-lg navbar-line-under-text fixed-top bg-light navegacao" role="navigation">
+              <div class="container-fluid">
+                <a href="index.html" class="navbar-brand brand mx-5" title="Linka-favela">
+                  <img src="./img/logo.png" alt="Logotipo Linka Favela: um globo com uma favela como plano de fundo" width="150"></a>                        
+                    
+                  <!--menu responsivo-->
+                      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-principal" type="button">
+                      <i class="bi bi-three-dots-vertical"></i>
+                      </button>
+
+                  <div class="collapse navbar-collapse menu-principal justify-content-center" id="nav-principal">
+                      <ul class="navbar-nav">
+                          <li class="nav-item">
+                              <a href="#home" class="nav-link smooth-scroll">Editais</a>
+                          </li>
+                          <li class="nav-item">
+                                  <a href="#sobre" class=" nav-link smooth-scroll">Sobre a Linka Favela</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="#tutorial" class="nav-link smooth-scroll">Candidate-se</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="#projetos" class=" nav-link smooth-scroll">Projetos</a>
+                          </li>                        
+                          <li class="nav-item">
+                              <a href="#contato" class="nav-link smooth-scroll">Contato</a>
+                          </li>
+                      </ul>
+                      <div class="d-none d-lg-block">
+                      <ul class="navbar-nav mx-5">
+                          <li class="nav-item mr-2"><a href="https://www.twitter.com/" class="nav-link"><i class="fab fa-twitter fa-lg"></i></a></i></li>
+                          <li class="nav-item mr-2"><a href="https://www.linkedin.com" class="nav-link"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+                          <li class="nav-item"><a href="https://facebook.com" class="nav-link"><i class="fab fa-facebook fa-lg"></i></a>
+                          </li>
+                      </ul>
+                  </div>
+                  </div>
+              </div>
+          </nav>
+          <!------------Fim menu principal----------->
+          </div>
+      </header>
+      <main>
+        <div class="container-fluid bg-principal espaco-editais">
+            <section id="home">
+            <!--Search-->         
+              <div class="search margin-search espaco-editais">
+                <form>
+                  <div class="row">
+                    <div class="col">
+                      <label for="search" aria-label="search" hidden>Pesquisar</label>
+                      <input type="text" class="form-control" id="search" placeholder="Pesquisar ...">
+                    </div>
+                    <div class="mr-5 ml-3">
+                      <button class="btn btn-outline-info my-2 my-sm-0 form-control" type="submit"><i class="fas fa-search"></i></button>
+                    </div>  
+                    <div class="col">
+                      <button type="button" class="btn btn-lg btn-info dropdown-toggle dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        filtrar e ordenar
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <div class="dropdown-menu">
+                        Ordem Decrescente
+                        Ordem Crescente                        
+                      </div>
+                    </div>                  
+                  </div>
+                  </form>                                   
+              </div>
+              <!--/Search-->
+
+              <!--carousel-->              
+              <div id="multi-item" class="carousel slide carousel-multi-item" data-ride="carousel">
+                <!--Controls-->
+                <div class="carousel-indicators controls-top">
+                  <a class="btn-floating waves-effect waves-light" href="#multi-item" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+                  <a class="btn-floating waves-effect waves-light" href="#multi-item" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+                </div>
+                <!--/Controls--> 
+
+                <!--Indicators-->
+                <ol class="carousel-indicators">
+                  <li data-target="#multi-item" data-slide-to="0" class="active"></li>
+                  <li data-target="#multi-item" data-slide-to="1"></li>                  
+                </ol>
+                <!--/Indicators-->
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
-</html>
+                <!--cards edital-->
+              <div class="carousel-inner" role="listbox">
+              
+                  <!--primeiro card-->
+                <div class="carousel-item active">  
+
+                  <div class="col-md-3 card-position">
+                  <div class="card mb-2">
+                        <img class="card-img-top"
+                          src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                          <a class="btn btn-primary">Button</a>
+                        </div>
+                    </div>
+                  </div>
+              
+                    <div class="col-md-3 card-position" >
+                      <div class="card mb-2">
+                        <img class="card-img-top"
+                          src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                          <a class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <div class="col-md-3 card-position">
+                      <div class="card mb-2">
+                        <img class="card-img-top"
+                          src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                          <a class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-3 card-position">
+                    <div class="card mb-2">
+                        <img class="card-img-top"
+                          src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                          <a class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                    </div>   
+                    
+                  
+                </div>
+                  
+                  <!--/primeiro card-->
+              
+                  <!--segundo card-->
+                  <div class="carousel-item">
+              
+                    <div class="col-md-3" style="float:left">
+                      <div class="card mb-2">
+                        <img class="card-img-top"
+                          src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                          <a class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <div class="col-md-3" style="float:left">
+                      <div class="card mb-2">
+                        <img class="card-img-top"
+                          src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                          <a class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <div class="col-md-3" style="float:left">
+                      <div class="card mb-2">
+                        <img class="card-img-top"
+                          src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                          <a class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-3" style="float:left">
+                      <div class="card mb-2">
+                        <img class="card-img-top"
+                          src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                          <a class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                    </div>
+              
+                  </div>
+                  <!--/segundo card-->         
+                <!--/.cards edital-->
+              </div>             
+          </section>
+                    
+          </div>
+      </main>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+  </html>
